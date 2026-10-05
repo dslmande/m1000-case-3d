@@ -1,6 +1,6 @@
 # Matrix 1000 – 19" enclosure (1U), 3D views
 
-Enclosure for the new Matrix 1000 control unit, version **v2.12-b3f** (2026-10-05): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+Enclosure for the new Matrix 1000 control unit, version **v2.13-b3f** (2026-10-05): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
 
 ## Interactive viewer
 
@@ -28,6 +28,7 @@ Enclosure for the new Matrix 1000 control unit, version **v2.12-b3f** (2026-10-0
 ## Notes
 
 - The lid has lips on the left, right and rear (screwed from the side); at the front it stays flat and is held by the front panel brackets.
+- The rear lip of the lid has three arched cut-outs so the MIDI labels stay readable.
 - The MIDI and audio jacks and the IEC inlet are **simplified bodies** based on datasheets, not manufacturer models.
 - The mainboard is a bare PCB without components.
 - This is a design-stage model for viewing, not a manufacturing document.
