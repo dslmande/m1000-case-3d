@@ -1,0 +1,33 @@
+# Matrix 1000 – 19" enclosure (1U), 3D views
+
+Enclosure for the new Matrix 1000 control unit, version **v2.12-b3f** (2026-10-05): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+
+## Interactive viewer
+
+**[Open the 3D viewer in your browser](https://dslmande.github.io/m1000-case-3d/)** — drag to rotate, wheel to zoom, right click or shift to pan. Parts can be switched on and off, the enclosure can be made transparent, and a horizontal section can be moved through the unit. Click a part to see its name. The file [`index.html`](index.html) is self-contained and only loads three.js from a CDN.
+
+## Views
+
+| | |
+|---|---|
+| ![](bilder/01-outside-front-oblique.png) | ![](bilder/02-outside-rear-oblique.png) |
+| Outside, front oblique | Outside, rear oblique (IEC inlet, fuse, MIDI, audio) |
+| ![](bilder/07-outside-front.png) | ![](bilder/10-outside-rear.png) |
+| Front | Rear |
+| ![](bilder/08-outside-left-side.png) | ![](bilder/09-outside-top.png) |
+| Left side | Top |
+| ![](bilder/11-outside-bottom.png) | ![](bilder/12-inside-top-no-lid.png) |
+| Bottom | Inside from above, lid removed |
+| ![](bilder/03-inside-from-rear-above.png) | ![](bilder/13-inside-rear-wall-jacks-iec.png) |
+| Inside from rear, above | Inside at the rear wall: MIDI, audio, IEC |
+| ![](bilder/14-inside-mainboard-top.png) | ![](bilder/04-inside-mainboard-display-detail.png) |
+| Mainboard from above | Detail: mainboard and display PCB |
+| ![](bilder/05-display-pcb-from-rear.png) | ![](bilder/06-control-unit-from-front-no-panel.png) |
+| Display PCB from the rear | Control unit from the front, front panel removed |
+
+## Notes
+
+- The lid has lips on the left, right and rear (screwed from the side); at the front it stays flat and is held by the front panel brackets.
+- The MIDI and audio jacks and the IEC inlet are **simplified bodies** based on datasheets, not manufacturer models.
+- The mainboard is a bare PCB without components.
+- This is a design-stage model for viewing, not a manufacturing document.
