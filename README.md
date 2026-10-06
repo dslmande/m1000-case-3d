@@ -1,6 +1,6 @@
 # Matrix 1000 – 19" enclosure (1U), 3D views
 
-Enclosure for the new Matrix 1000 control unit, version **v2.14-b3f** (2026-10-06): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+Enclosure for the new Matrix 1000 control unit, version **v2.15-b3f** (2026-10-06): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
 
 ## Interactive viewer
 
@@ -27,14 +27,15 @@ Enclosure for the new Matrix 1000 control unit, version **v2.14-b3f** (2026-10-0
 
 ## Finish
 
-- Enclosure (base tray and lid): 1.5 mm galvanised steel, **powder coated**. The lid lips are made 0.2 mm larger so that the gap to the tray is still 0.25 mm per side after coating.
+- Enclosure (base tray and lid): 1.5 mm DC01 steel (uncoated, not galvanised), **powder coated**. The lid lips are made 0.2 mm larger so that the gap to the tray is still 0.25 mm per side after coating.
 - Colours: powder coat RAL 9005 jet black (tray, lid and panel, one batch); screen print white RAL 9010 and blue close to RAL 5023 (sample print before the series).
 - Front panel of the customer version: 3 mm aluminium, **powder coated**, legend **screen printed** (white and blue). The 15 key cut-outs are 12.7 mm square (12.5 mm after coating) with R0.5 corners for the key caps.
 
 ## Notes
 
 - The lid has lips on the left, right and rear (screwed from the side); at the front it stays flat and is held by the front panel brackets.
-- The rear lip of the lid has three arched cut-outs above the MIDI jacks. The rear legend (Thru / Out / In) sits below the jacks and stays fully visible.
+- The rear legend (Thru / Out / In) sits below the MIDI jacks; the lid's rear lip does not cover anything.
+- Lid and floor screws are countersunk (ISO 7046 M3, 90 degree countersink dia 5.6), so the heads sit flush.
 - The MIDI and audio jacks and the IEC inlet are **simplified bodies** based on datasheets, not manufacturer models.
 - The mainboard is a bare PCB without components.
 - This is a design-stage model for viewing, not a manufacturing document.
