@@ -24,13 +24,15 @@ Enclosure for the new Matrix 1000 control unit, version **v2.15-b3f** (2026-10-0
 | Mainboard from above | Detail: mainboard and display PCB |
 | ![](bilder/05-display-pcb-from-rear.png) | ![](bilder/06-control-unit-from-front-no-panel.png) |
 | Display PCB from the rear | Control unit from the front, front panel removed |
+| ![](bilder/15-acrylic-window-front-closeup.png) | ![](bilder/16-acrylic-window-rear-pocket.png) |
+| Acrylic display window, front (flush) | Acrylic window in its rear pocket (panel shown light) |
 
 ## Finish
 
 - Enclosure (base tray and lid): 1.5 mm DC01 steel (uncoated, not galvanised), **powder coated**. The lid lips are made 0.2 mm larger so that the gap to the tray is still 0.25 mm per side after coating.
 - Colours: powder coat RAL 9005 jet black (tray, lid and panel, one batch); screen print white RAL 9010 and blue close to RAL 5023 (sample print before the series).
 - Internal heat sink (angle bracket, carried over from the original design): aluminium sheet 2.0 mm, uncoated.
-- Display window: stepped red acrylic (3 mm), plug flush with the front, rim glued in a rear pocket (0.5 mm ledge).
+- Display window: stepped red acrylic (3 mm), plug flush with the front, rim glued in a rear pocket with a 3.5 to 5 mm bonding ledge all round, so adhesive stays out of the visible area.
 - Front panel of the customer version: 3 mm aluminium, **powder coated**, legend **screen printed** (white and blue). The 15 key cut-outs are 12.7 mm square (12.5 mm after coating) with R0.5 corners for the key caps.
 
 ## Notes
