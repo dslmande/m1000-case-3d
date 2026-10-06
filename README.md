@@ -25,10 +25,15 @@ Enclosure for the new Matrix 1000 control unit, version **v2.14-b3f** (2026-10-0
 | ![](bilder/05-display-pcb-from-rear.png) | ![](bilder/06-control-unit-from-front-no-panel.png) |
 | Display PCB from the rear | Control unit from the front, front panel removed |
 
+## Finish
+
+- Enclosure (base tray and lid): 1.5 mm galvanised steel, **powder coated**. The lid lips are made 0.2 mm larger so that the gap to the tray is still 0.25 mm per side after coating.
+- Front panel of the customer version: 3 mm aluminium, **powder coated**, legend **screen printed** (white and blue). The 15 key cut-outs are 12.7 mm square (12.5 mm after coating) with R0.5 corners for the key caps.
+
 ## Notes
 
 - The lid has lips on the left, right and rear (screwed from the side); at the front it stays flat and is held by the front panel brackets.
-- The rear lip of the lid has three arched cut-outs so the MIDI labels stay readable.
+- The rear lip of the lid has three arched cut-outs above the MIDI jacks. The rear legend (Thru / Out / In) sits below the jacks and stays fully visible.
 - The MIDI and audio jacks and the IEC inlet are **simplified bodies** based on datasheets, not manufacturer models.
 - The mainboard is a bare PCB without components.
 - This is a design-stage model for viewing, not a manufacturing document.
