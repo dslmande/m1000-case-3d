@@ -1,6 +1,6 @@
 # Matrix 1000 – 19" enclosure (1U), 3D views
 
-Enclosure for the new Matrix 1000 control unit, version **v2.15-b3f** (2026-10-06): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+Enclosure for the new Matrix 1000 control unit, version **v2.16-b3f** (2026-10-07): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
 
 ## Interactive viewer
 
