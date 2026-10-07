@@ -1,6 +1,6 @@
 # Matrix 1000 – 19" enclosure (1U), 3D views
 
-Enclosure for the new Matrix 1000 control unit, version **v2.16-b3f** (2026-10-07): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+Enclosure for the new Matrix 1000 control unit, version **v2.17-b3f** (2026-10-07): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
 
 ## Interactive viewer
 
@@ -33,7 +33,9 @@ Enclosure for the new Matrix 1000 control unit, version **v2.16-b3f** (2026-10-0
 - Colours: powder coat RAL 9005 jet black (tray, lid and panel, one batch); screen print white RAL 9010 and blue close to RAL 5023 (sample print before the series).
 - Internal heat sink (angle bracket, carried over from the original design): aluminium sheet 2.0 mm, uncoated.
 - Display window: stepped red acrylic (3 mm), plug flush with the front, rim glued in a rear pocket with a 3.5 to 5 mm bonding ledge all round, so adhesive stays out of the visible area.
-- Front panel of the customer version: 3 mm aluminium, **powder coated**, legend **screen printed** (white and blue). The 15 key cut-outs are 12.7 mm square (12.5 mm after coating) with R0.5 corners for the key caps.
+- Front panel of the customer version: 3 mm aluminium, **powder coated**, legend **screen printed** (white and blue). All openings are cut 0.2 mm larger to allow for the coating, e.g. the 15 key cut-outs are 12.7 mm square (12.5 mm after coating) with R0.5 corners for the key caps.
+- Front panel fixing: 4 countersunk M4 screws into the side tabs of the tray; the control PCB and the brackets sit on M2.5 press-in studs on the back of the panel.
+- Mains switch: Marquardt 1858.1103 rocker, double pole, 10(4) A 250 V~.
 
 ## Notes
 
