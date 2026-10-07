@@ -1,6 +1,6 @@
 # Matrix 1000 – 19" enclosure (1U), 3D views
 
-Enclosure for the new Matrix 1000 control unit, version **v2.17-b3f** (2026-10-07): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
+Enclosure for the new Matrix 1000 control unit, version **v2.18-b3f** (2026-10-07): 1U, 300 mm deep, base tray and lid from 1.5 mm steel sheet, 3 mm aluminium front panel.
 
 ## Interactive viewer
 
@@ -15,7 +15,7 @@ Enclosure for the new Matrix 1000 control unit, version **v2.17-b3f** (2026-10-0
 | ![](bilder/07-outside-front.png) | ![](bilder/10-outside-rear.png) |
 | Front | Rear |
 | ![](bilder/08-outside-left-side.png) | ![](bilder/09-outside-top.png) |
-| Left side | Top |
+| Left side | Top (ventilation slots above the heat sink) |
 | ![](bilder/11-outside-bottom.png) | ![](bilder/12-inside-top-no-lid.png) |
 | Bottom | Inside from above, lid removed |
 | ![](bilder/03-inside-from-rear-above.png) | ![](bilder/13-inside-rear-wall-jacks-iec.png) |
@@ -41,6 +41,7 @@ Enclosure for the new Matrix 1000 control unit, version **v2.17-b3f** (2026-10-0
 
 - The lid has lips on the left, right and rear (screwed from the side); at the front it stays flat and is held by the front panel brackets.
 - The rear legend (Thru / Out / In) sits below the MIDI jacks; the lid's rear lip does not cover anything.
+- The lid has 20 ventilation slots (3 x 60 mm after coating, pitch 8 mm) directly above the internal heat sink.
 - Lid and floor screws are countersunk (ISO 7046 M3, 90 degree countersink dia 5.6), so the heads sit flush.
 - The MIDI and audio jacks and the IEC inlet are **simplified bodies** based on datasheets, not manufacturer models.
 - The mainboard is a bare PCB without components.
