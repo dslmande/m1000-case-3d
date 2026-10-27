@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matrix 1000 Front Panel</title>
+<meta name="description" content="New front panel for the Matrix 1000 in cream and black, shown in a 19-inch case.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Archivo:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column – colour switch, large render, three view thumbnails. */
+:root {
+  --bg: #f2f3f5; --surface: #ffffff; --fg: #16181c; --muted: #5d636d; --line: #d6d9df;
+  --accent: #b8231c; --chip: #e6e8ec;
+  --font-display: "Archivo Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #121418; --surface: #1b1e24; --fg: #e9ebef; --muted: #9aa1ad; --line: #2c313a; --accent: #e0574d; --chip: #262a32; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: max(28px, env(safe-area-inset-top, 0px)) max(48px, env(safe-area-inset-bottom, 0px));
+}
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+h1 { font: 700 clamp(30px, 5vw, 46px)/1.05 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.lead { color: var(--muted); max-width: 68ch; margin: 0; }
+h2 { font: 600 22px/1.2 var(--font-display); margin: 0; }
+.switch { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.switch button {
+  display: inline-flex; align-items: center; gap: 10px; cursor: pointer;
+  font: 600 15px/1 var(--font-body); color: var(--fg); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 999px; padding: 10px 16px 10px 10px;
+}
+.switch button[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.swatch { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); flex: none; }
+.swatch.cream { background: #f2e7c6; }
+.swatch.black { background: #141416; }
+.stage { display: grid; gap: 10px; }
+.stage figure img { background: #dfe3e8; }
+.thumbs { display: grid; gap: 10px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.thumbs button { padding: 0; border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface); cursor: pointer; overflow: hidden; display: grid; }
+.thumbs button[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent); }
+.thumbs img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #dfe3e8; display: block; }
+.thumbs span { font-size: 12.5px; color: var(--muted); padding: 6px 8px; text-align: left; }
+figure { margin: 0; display: grid; gap: 6px; }
+figure img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); }
+figcaption { color: var(--muted); font-size: 13px; }
+footer { color: var(--muted); font-size: 13px; max-width: 80ch; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Matrix 1000 Front Panel</h1>
+    <p class="lead">A new front panel for the Matrix 1000 in two colours: cream with black lettering and black with white lettering. Shown in a 19-inch case with control board, display board and main board.</p>
+  </header>
+
+  <div class="switch" role="group" aria-label="Colour">
+    <button type="button" aria-pressed="true" data-v="cream"><span class="swatch cream"></span>Cream</button>
+    <button type="button" aria-pressed="false" data-v="black"><span class="swatch black"></span>Black</button>
+  </div>
+
+  <section class="stage" aria-label="Renders">
+    <figure><img id="main" alt=""><figcaption id="caption"></figcaption></figure>
+    <div class="thumbs">
+      <button type="button" aria-pressed="true" data-k="front"><img alt="" loading="lazy"><span>Front view</span></button>
+      <button type="button" aria-pressed="false" data-k="rear"><img alt="" loading="lazy"><span>Rear view</span></button>
+      <button type="button" aria-pressed="false" data-k="open"><img alt="" loading="lazy"><span>Without lid</span></button>
+    </div>
+  </section>
+
+  <footer>A design by dsl-man.de. Matrix 1000 is a product name of its manufacturer; this page shows an independent front panel for existing units.</footer>
+</div>
+
+<script>
+const VIEWS = { front: "Front view", rear: "Rear view", open: "Without lid" };
+const ALT = { front: "Unit seen from the front at an angle", rear: "Unit seen from the rear at an angle", open: "Unit without lid" };
+const NAME = { cream: "Cream", black: "Black" };
+let colour = "cream", shot = "front";
+function show() {
+  const main = document.getElementById("main");
+  main.src = "images/" + colour + "-" + shot + ".png";
+  main.alt = NAME[colour] + " version, " + ALT[shot].toLowerCase();
+  document.getElementById("caption").textContent = NAME[colour] + " – " + VIEWS[shot];
+  document.querySelectorAll(".switch button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === colour)));
+  document.querySelectorAll(".thumbs button").forEach(b => {
+    b.setAttribute("aria-pressed", String(b.dataset.k === shot));
+    const img = b.querySelector("img"); img.src = "images/" + colour + "-" + b.dataset.k + ".png"; img.alt = ALT[b.dataset.k];
+  });
+  try { localStorage.setItem("m1000-colour", colour); } catch (e) {}
+}
+document.querySelectorAll(".switch button").forEach(b => b.onclick = () => { colour = b.dataset.v; show(); });
+document.querySelectorAll(".thumbs button").forEach(b => b.onclick = () => { shot = b.dataset.k; show(); });
+// Old German anchors (#creme, #schwarz) still work.
+const HASH = { "#cream": "cream", "#black": "black", "#creme": "cream", "#schwarz": "black" };
+let start = HASH[location.hash];
+if (!start) { try { start = localStorage.getItem("m1000-colour"); } catch (e) {} }
+colour = start === "black" ? "black" : "cream";
+show();
+addEventListener("hashchange", () => { if (HASH[location.hash]) { colour = HASH[location.hash]; show(); } });
+</script>
+</body>
+</html>
